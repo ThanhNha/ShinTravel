@@ -1,0 +1,69 @@
+@import"variables";
+*{
+    transition:all .2s linear;
+
+}
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 2rem 9%;
+   
+}
+*::selection{
+    
+    background-color:$orange;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px $orange;
+	border-radius: .1rem;
+	background-color: #fff;
+}
+::-webkit-scrollbar{
+    width: 1.7rem;
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: $orange;
+
+}
+
+.btn-orange{
+    color: #fff;
+    background: $orange;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    border: .2rem solid $orange;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+.btn-orange:hover{
+    background: rgba(255,165,0 ,.3);
+    color: $orange;
+}
+.heading{
+    text-align: center;
+    span{
+        color: $orange;
+        text-transform: uppercase;
+        padding: 0.2rem 1rem;
+        background:rgba(255, 165, 0,.2);
+        border-radius: .3rem;
+        font-size: 3rem;
+        
+    }
+    .space{
+        background-color: transparent;
+    }
+}
+
+
+
+
+
+

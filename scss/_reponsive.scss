@@ -1,0 +1,62 @@
+@import "variables";
+
+@media screen and (max-width:991px) {
+  html{
+      font-size: 55%;
+  }
+  .header{
+      padding: 2rem 2%;
+  }
+  section{
+    padding: 2rem 4rem;
+}
+}
+
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    section{
+        padding: 2rem 3rem;
+    }
+    .header{
+        position: relative;
+        &-menu{
+            display: block;
+            position: absolute;    
+            top: 100%;
+            left: 0 ;
+            right: 0;   
+            background: $dark-light;
+            box-shadow: $shadow;   
+            padding: 1rem 2rem; 
+            opacity: 0;
+            .menu-item .menu-link{
+                display:block;
+                border-radius: .5rem;
+                background: #222;
+                padding: 1.5rem;
+                margin: 1.5rem;
+    
+            }
+        }
+        &-menu.active{
+            opacity: 1;
+        }
+        &-close{
+            .icon-open{
+                display: block;
+            }
+            
+        }
+        
+    }
+    
+
+}
+
+@media screen and (max-width:400px) {
+    
+   
+}

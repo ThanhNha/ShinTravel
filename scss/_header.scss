@@ -1,0 +1,170 @@
+.header{
+    position: relative;
+    z-index: 1000;
+    padding: 2rem 9%;
+    background: $dark-light;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    &-logo{
+        a{
+            font-size: 2rem;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        span{
+            color: $orange;
+        }
+    }
+    &-menu{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        .menu-item{
+            list-style: none;
+            .menu-link{
+                color: #fff;
+                font-size: 2rem;
+                padding: .5rem .8rem;
+               
+                border-radius: 1rem;
+            }
+            .menu-link:hover{
+                
+                background: $orange;
+            }
+            .menu-link.active{
+                background: $orange;
+            }
+        }
+    }
+    &-icon{
+        font-size: 2.5rem;
+        line-height: 1rem;
+        cursor: pointer;
+        display:flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        padding: 1rem;
+        
+
+        
+    }
+    &-icon i:hover{
+        color: $orange;
+        transform: rotate(360deg);
+    }
+    &-close{
+        // display: none;
+        .icon-open{
+            display: none;
+            font-size: 3rem;
+            line-height: 1rem;
+            cursor: pointer;
+
+        }
+        .icon-open i:hover{
+            transform: rotate(360deg);
+        }
+            
+        
+    }
+    &-search{
+        position: absolute;
+        top: -120%;
+        right: 10%;
+        left: 10%;
+        padding: 1.5rem 2rem;
+        background: #fff;
+        box-shadow: $shadow;
+        border-radius: 2rem;
+        width: 80%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+        input{
+            padding: 1rem 2rem;
+            background: #fff;
+            border: none;
+            font-size: 1.7rem;
+            color: $orange;
+            width: 100%;
+            border-radius: 2rem;
+        }
+        label{
+            padding: 1rem;
+            color: $orange;
+            font-size: 2rem;
+            background: none;
+            box-shadow: none;
+        }
+    }
+    &-search.active{
+        top: 120%;
+    }
+}
+
+.home{
+    position: relative;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    z-index: 0;
+    &-content{
+        min-width: 20%;
+        text-align: center;
+        h3{
+            color: #fff;
+            font-size: 5rem;
+            text-transform: uppercase;
+
+
+        }
+        p{
+            color: #fff;
+            font-size: 2rem;
+            text-transform: capitalize;
+
+        }
+    }
+    &-container video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-controls{
+        position: relative;
+        top: 10rem;
+        padding: 1rem;
+        border-radius: 5rem;
+        background: rgba(0,0,0,.7);
+        z-index: 2;
+        .vid-btn{
+            width: 2rem;
+            height: 2rem;
+            display: inline-block;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 .5rem;
+        }
+        .vid-btn.active{
+            background: $orange;
+        }
+
+    }
+}

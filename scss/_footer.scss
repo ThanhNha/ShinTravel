@@ -1,0 +1,85 @@
+.contact{
+    &-row{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        .image{
+            flex: 1 1 30rem;
+        }
+        .form{
+            flex: 1 1 30rem;
+            background: #fff;
+            box-shadow: $shadow;
+            padding: 1rem;
+            .inputBox{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                input{
+                    border: none;
+                    width: 49%;
+                    background: #f7f7f7;
+                    font-size: 1.7rem ;
+                    margin: 1rem 0;
+                    padding: 1rem;
+                }
+            }
+            textarea{
+                width: 100%;
+                border: none;
+                resize: none;
+                background: #f7f7f7;
+                font-size: 1.7rem ;
+                margin: 1rem 0;
+                padding: 1rem;
+            }
+        }
+
+    }
+
+
+}
+
+.footer{
+    background: $dark-light;
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    &-box{
+        flex: 1 1 20rem;
+        h3{
+            font-size: 3rem;
+            color: #fff;
+            text-transform: capitalize;
+            margin-bottom: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+            color: #eee;
+        }
+        a{
+            color: #eee;
+            display: block;
+            padding: .7rem;
+            font-size: 1.7rem;
+        }
+    }
+    .credit{
+        text-align: center;
+        border-top: .1rem solid #eee;
+        padding: 3rem;
+        font-size: 2rem;
+        color: #eee;
+        text-transform: capitalize;
+        span{
+            color: $orange;
+        }
+    }
+}
